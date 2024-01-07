@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/create_account.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+        <title>Create account</title>
+        <link rel= "icon" href="../pics/create logo.png">
+        <script src="../js/create_account.js"></script>
+    </head>
+    <body>
+        <div>
+            <img src="../pics/airport create.jpg" alt="airport image" width="100%" height="600px">
+            <h1 style="position: absolute; top: -20px;">Create an account</h1>
+            <h2 style="position: absolute; top: 30px;">to access our features</h2>
+        </div>
+        <hr class="hori">
+        <img src="../pics/account-creating.jpg" style="float: right; height: 70%;">
+        <form action="successful_account.php" method="post">
+            <div>
+            <label for="FN" style="font-size: xx-large;">First name</label>
+                <input type="text" id="FN" name="first_name" placeholder="First name" required style="font-size: xx-large;" maxlength="60">
+                <br><br>
+                <label for="LN" style="font-size: xx-large;">Last name</label>
+                <input type="text" id="LN" name="last_name" placeholder="Last name" required style="font-size: xx-large;" maxlength="60">
+                <br><br>
+                <label for="DOB" style="font-size: xx-large;">Date of Birth</label>
+                <input type="date" id="DOB" name="dob" required style="font-size: xx-large;">
+                <br><br>
+                <label for="number" style="font-size: xx-large; float: left;">Phone Number</label>
+                <input type="tel" id="number" name="phonenumber" placeholder="12 345678" pattern="[0-9]{2} [0-9]{3}[0-9]{3}" required style="font-size: xx-large; float: left;">
+                <p style="float: left; ">Format: 12 345678</p>
+                <br style="clear: left;">
+                <label for="city" style="font-size: xx-large;">City</label>
+                <select name="city" id="city" style="height: 35px; width: 80px;">
+                    <option value="beirut">Beirut</option>
+                    <option value="tripoli">Tripoli</option>
+                    <option value="sidon">Sidon</option>
+                    <option value="tyre">Tyre</option>
+                    <option value="baalbek">Baalbek</option>
+                    <option value="byblos">Byblos</option>
+                    <option id="other" value="others">Other</option>
+                </select>
+                <label for="other city" style="font-size: large;">Other:</label>
+                <input type="text" id="city" style="margin-left: 1px; font-size: large;" disabled>
+                <br><br>
+                <label for="account email" style="font-size: xx-large;">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@xyz.com" required style="font-size: xx-large;">
+                <br><br>
+                <label for="username" style="font-size: xx-large;">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required style="font-size: xx-large;" minlength="5" maxlength="20">
+                <br><br>
+                <label for="password" style="font-size: xx-large;">Password</label>
+                <input type="password" id="password" name="password" required style="font-size: xx-large;" minlength="8">
+                <br><br>
+                <label for="password" style="font-size: xx-large; float: left;">Reenter Password</label>
+                <input type="password" id="repassword" name="password2" required style="font-size: xx-large; float: left;" minlength="8">
+                <p id="verifypass" style="float: left; margin-top: 7px; margin-left: 7px; color: rgb(255, 255, 255)"></p>
+                <br style="clear: left;">
+                <br>
+                <input type="reset" style="height: 30px; width: 55px; font-size: large;">
+                <input type="submit" value="Submit" id="submit button" disabled style="height: 30px; width: 70px; font-size: large;">
+            </div>
+        </form>
+    </body>
+</html>

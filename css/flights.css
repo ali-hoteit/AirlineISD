@@ -1,0 +1,55 @@
+*{
+    font-family: 'Oswald';
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 99%;
+    text-align: center;
+    font-size: x-large;
+}
+
+thead tr {
+    background-color: #3296d8;
+    color: #ffffff;
+    text-align: center;
+}
+
+thead tr th{
+    border: 1px solid black;
+}
+
+tbody tr {
+    text-align: center;
+    height: 60px;
+    font-size: xx-large;
+}
+
+tbody tr td{
+    border-left: 1px dashed black;
+    border-right: 1px dashed black;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #e4e4e4;
+}
+
+.moreinfobut{
+    width: 70px; 
+    height: 40px; 
+    font-size: x-large;
+}
+
+.formclass{
+    font-size: xx-large;
+    margin-left: 50px;
+    width: 400px;
+    float: left;
+}
+
+.inputfields{
+    margin-top: 10px;
+    font-size: large;
+    height: 35px;
+}

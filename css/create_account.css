@@ -1,0 +1,10 @@
+body{
+    font-family: 'Allerta Stencil';
+    font-size: 22px;
+}
+
+.hori{
+    width: 80%;
+    color: aqua;
+    border-color: aqua;
+}
